@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     post :create
     delete :logout
     get :me
-  end
+    end
   
   namespace :cars, defaults:{ format: :json } do
     get :index
@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     post :create
     patch :update
     delete :destroy
-  end
+    end
   
   namespace :reviews, defaults:{format: :json } do
     get :index
@@ -21,5 +21,5 @@ Rails.application.routes.draw do
     post :create
     patch :update
     delete :destroy
-  end
+    end
 end

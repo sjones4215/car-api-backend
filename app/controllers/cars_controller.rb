@@ -1,6 +1,6 @@
 class CarsController < ApplicationController
-    before_action set_car: :only[:show, :update, :destroy]
-    skip_before_action authenticate: :only[:index, :show]
+    before_action :set_car, only: [:show, :update, :destroy]
+    skip_before_action :authenticate, only: [:index, :show]
 
     def index
         @cars = Car.all

@@ -22,4 +22,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: 'cars-api-production'
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: password
+  pool: 5

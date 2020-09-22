@@ -36,7 +36,7 @@ class CarsController < ApplicationController
     private
 
     def set_car
-        @cars = Car.find(params[:id])
+        @car = Car.find(params[:id])
     end
 
     def car_params

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_203638) do
+ActiveRecord::Schema.define(version: 2020_09_22_215819) do
 
   create_table "cars", force: :cascade do |t|
     t.integer "year"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 2020_09_22_203638) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
     t.string "description"
+    t.string "info"
   end
 
   create_table "reviews", force: :cascade do |t|

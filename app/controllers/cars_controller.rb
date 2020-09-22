@@ -8,8 +8,7 @@ class CarsController < ApplicationController
     end
 
     def show
-        @car = Review.where(car_id: params[:id])
-        render json: { cars: @cars, reviews: @reviews }
+        render json: { cars: @car, reviews: @reviews }
     end
     
     def create

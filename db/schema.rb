@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_22_011009) do
+ActiveRecord::Schema.define(version: 2020_09_22_191137) do
 
 # Could not dump table "cars" because of following StandardError
 #   Unknown type 'cars' for column 'description'
